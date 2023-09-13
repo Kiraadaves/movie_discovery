@@ -1,0 +1,119 @@
+* {
+    padding: 0rem;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner-details {
+    padding-left: 6%;
+    padding-top: 150px;
+    width: 50%;
+}
+
+.banner-details h2 {
+    color: #fff;
+    font-size: 48px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.banner-overview {
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.banner-details button,
+.banner-btn-section a {
+    padding: 10px 20px;
+    background-color: #be123c;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    width: 230px;
+}
+
+.banner-btn .icon {
+    font-size: 24px;
+}
+
+.imdb,
+.imdb-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.imbd-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    padding: 20px 0px;
+}
+
+.imbd-btn-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    padding: 20px 0px;
+}
+
+.imdb img {
+    width: 50px;
+    height: auto;
+}
+
+.imdb-card img {
+    width: 100%;
+    height: 20px;
+}
+
+.imdb-card .imbd-btn-two {
+    width: 20px;
+}
+
+.imdb-card p {
+    color: #000;
+    font-size: 12px;
+}
+
+.imbd-btn-two img {
+    width: 30px;
+}
+
+.featured {
+    padding: 6%;
+}
+
+.banner-single {
+    width: 100%;
+        height: auto;
+}
+
+
+@media (max-width: 640px) {
+    ::placeholder {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 698px) {
+    .footer-icon {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
