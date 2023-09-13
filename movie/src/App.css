@@ -117,3 +117,9 @@
         align-items: center;
     }
 }
+
+.bg-rose:hover {
+    background-color: #ffe4e6;
+    border-right: 4px solid #be185d;
+    cursor: pointer;
+}

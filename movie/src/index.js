@@ -6,7 +6,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from './App';
-import Details from './Pages/Details';
 import Moviepage from "./Pages/Moviepage";
 import reportWebVitals from './reportWebVitals';
 
@@ -20,8 +19,8 @@ const router = createBrowserRouter([
     element: <Moviepage />,
   },
   {
-    path: "details",
-    element: <Details />,
+    path: "movie/:id",
+    element: <Moviepage />,
   },
 ]);
 
