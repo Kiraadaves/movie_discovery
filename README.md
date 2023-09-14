@@ -1,4 +1,5 @@
-Movie Web App
+## Movie Web App
+
 I created this app as part of my internship requirement with Hngx. It was created using [React.js](https://react.dev), [Tailwind CSS](https://tailwindcss.com)
 
 ## Getting Started
