@@ -1,6 +1,5 @@
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Footer from "../Components/Footer";
 import tv from "../assets/tv.png";
 import home from "../assets/newhome.png";
 import video from "../assets/newvideo.png";
@@ -20,6 +19,9 @@ export default function Moviepage() {
       .then((res) => res.json())
       .then((data) => {
         setMovies(data);
+      }).catch(function (error) {
+          console.error("Could'nt display movie details...");
+          console.error(error);
       });
   }, [id]);
   return (

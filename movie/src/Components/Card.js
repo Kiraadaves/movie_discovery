@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import imdb from "../assets/imdb.png";
 import rot from "../assets/rot.png";
+
 const api_img = "https://image.tmdb.org/t/p/w500/";
 
 export default function Card({
   exam
 }) {
+    
   return (
     <>
       <Link to={`movie/${exam.id}`}>
@@ -33,6 +35,7 @@ export default function Card({
             </div>
           </div>
           <h2 data-testid="movie-release-date" className="my-2">
+            
             Release Date: {exam.release_date}
           </h2>
         </div>

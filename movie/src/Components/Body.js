@@ -3,7 +3,7 @@ import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRound
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 const api_url =
-  "https://api.themoviedb.org/3/movie/popular?api_key=98ae4acbc92a69d5c0c6d4d68f3992e5";
+  "https://api.themoviedb.org/3/movie/top_rated?api_key=98ae4acbc92a69d5c0c6d4d68f3992e5";
 
 export default function Body() {
   const [movies, setMovies] = useState([]);
@@ -13,6 +13,9 @@ export default function Body() {
       .then((res) => res.json())
       .then((data) => {
         setMovies(data.results.slice(0, 10));
+      }).catch(function (error) {
+          console.error("Something went wrong with fetching to 10 movies");
+          console.error(error);
       });
   }, []);
   return (
