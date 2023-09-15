@@ -9,7 +9,7 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 export default function Navigation() {
   return (
     <Navbar expand="lg" className="pt-6">
-      <Container className=" mx-auto px-8 md:px-0 py-4 flex">
+      <Container className=" mx-auto px-8 md:px-0 py-4 flex justify-between">
         <Navbar.Brand href="#" className="flex flex-none items-center">
           <img src={tv} alt="" className=" h-12 w-12" />
           <h1 className="ml-6 text-2xl font-bold text-white hidden lg:block">
@@ -18,7 +18,7 @@ export default function Navigation() {
         </Navbar.Brand>
         <Form
           inline="true"
-          className=" px-3 mx-12 flex-1 xl:mx-56 rounded-md border-solid border-slate-300 border-2 items-center flex"
+          className="hidden px-3 mx-12 flex-1 xl:mx-56 rounded-md border-solid border-slate-300 border-2 items-center md:flex"
         >
           <InputGroup className=" flex w-full">
             <Form.Control

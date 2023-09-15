@@ -49,8 +49,9 @@ export default function Card({ exam }) {
               <p>78%</p>
             </div>
           </div>
-          <h2 data-testid="movie-release-date" className="my-2">
-            Release Date: {exam.release_date}
+          <h2 className="my-2">
+            Release Date:{" "}
+            <span data-testid="movie-release-date">{exam.release_date}</span>
           </h2>
         </div>
       </Link>

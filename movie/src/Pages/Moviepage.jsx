@@ -113,17 +113,12 @@ export default function Moviepage() {
           >
             {movies.title}
           </h2>
-          <h2
-            data-testid="movie-release-date"
-            className="text-sm text-gray-500 font-bold mt-5"
-          >
-            Release date: {movies.release_date}
+          <h2 className="text-sm text-gray-500 font-bold mt-5">
+            Release date:{" "}
+            <span data-testid="movie-release-date">{movies.release_date}</span>
           </h2>
-          <h2
-            data-testid="movie-runtime"
-            className="text-sm text-gray-500 font-bold mt-2"
-          >
-            Runtime: {movies.runtime} minutes
+          <h2 className="text-sm text-gray-500 font-bold mt-2">
+            Runtime: <span data-testid="movie-runtime">{movies.runtime}</span>
           </h2>
           <p data-testid="movie-overview" className="mt-4">
             {movies.overview}
