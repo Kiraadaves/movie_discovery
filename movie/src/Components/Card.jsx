@@ -50,8 +50,7 @@ export default function Card({ exam }) {
             </div>
           </div>
           <h2 className="my-2">
-            Release Date:{" "}
-            <span data-testid="movie-release-date">{exam.release_date}</span>
+            Release Date: <span data-testid="movie-release-date">{exam.release_date}</span>
           </h2>
         </div>
       </Link>
