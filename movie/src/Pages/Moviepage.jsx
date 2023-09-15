@@ -114,7 +114,7 @@ export default function Moviepage() {
             {movies.title}
           </h2>
           <h2 className="text-sm text-gray-500 font-bold mt-5">
-            Release date:{" "}
+            Release date:
             <span data-testid="movie-release-date">{movies.release_date}</span>
           </h2>
           <h2 className="text-sm text-gray-500 font-bold mt-2">
