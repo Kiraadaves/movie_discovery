@@ -19,11 +19,13 @@ export default function Moviepage() {
       .then((res) => res.json())
       .then((data) => {
         setMovies(data);
-      }).catch(function (error) {
-          console.error("Could'nt display movie details...");
-          console.error(error);
+      })
+      .catch(function (error) {
+        console.error("Could'nt display movie details...");
+        console.error(error);
       });
   }, [id]);
+
   return (
     <div className=" flex">
       <div className="left  w-2/6 ml-4 border-r-2 border-gray-300 rounded-3xl">
@@ -36,7 +38,9 @@ export default function Moviepage() {
 
         <div className="flex justify-center items-center mt-16 py-7 bg-rose">
           <img src={home} alt="home" className="mr-6 w-8" />
-          <h2 className="text-gray-700  font-bold ml-4">Home</h2>
+          <Link to="/">
+            <h2 className="text-gray-700  font-bold ml-4">Home</h2>
+          </Link>
         </div>
         <div className="flex justify-center items-center mt-4 py-7 bg-rose">
           <img src={video} alt="video" className="mr-6 w-8" />

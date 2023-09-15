@@ -17,7 +17,7 @@ export default function Navigation() {
           </h1>
         </Navbar.Brand>
         <Form
-          inline
+          inline="true"
           className=" px-3 mx-12 flex-1 xl:mx-56 rounded-md border-solid border-slate-300 border-2 items-center flex"
         >
           <InputGroup className=" flex w-full">
